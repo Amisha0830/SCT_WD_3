@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🎮 Tic-Tac-Toe</h1>
+        
+        <div class="mode-selector">
+            <button id="pvp-mode" class="active">Player vs Player</button>
+            <button id="pvc-mode">vs Computer</button>
+        </div>
+
+        <div class="score-board">
+            <div class="score-item">
+                <div class="score-value" id="x-score">0</div>
+                <div class="score-label">Player X</div>
+            </div>
+            <div class="score-item">
+                <div class="score-value" id="draws">0</div>
+                <div class="score-label">Draws</div>
+            </div>
+            <div class="score-item">
+                <div class="score-value" id="o-score">0</div>
+                <div class="score-label">Player O</div>
+            </div>
+        </div>
+
+        <div class="game-info">
+            <div class="current-player" id="current-player">Current Player: X</div>
+        </div>
+
+        <div class="game-board" id="game-board">
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+        </div>
+
+        <div class="game-status status-playing" id="game-status">
+            Make your move!
+        </div>
+
+        <div class="controls">
+            <button id="reset-game">🔄 New Game</button>
+            <button id="reset-scores">📊 Reset Scores</button>
+        </div>
+    </div>
+    <script src="script3.js"></script>
+    
+</body>
+</html>
